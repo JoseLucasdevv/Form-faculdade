@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  max-height: 100vh;
+  max-width: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+:root {
+  --black-color: #000;
+  --bg-color: #41cfd9;
+  --container-color: #55f0ce;
+}
+body {
+  /* background: var(--bg-color); */
+  background-color: var(--black-color);
+  font-family: "Poppins", sans-serif;
+}
+form {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 5px;
+  border: 0px solid var((--black-color));
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 400px;
+  background-image: linear-gradient(var(--bg-color), var(--container-color));
+}
+.wrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+label {
+  font-size: 18px;
+}
+input,
+textarea {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  outline: 0;
+}
+textarea::placeholder {
+  font-size: 12px;
+}
+h1 {
+  font-weight: 400;
+}
+.btn-wrapper {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  outline: 0;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  transition: 500ms ease-in-out;
+}
+.btn:hover {
+  color: white;
+  background-color: var(--black-color);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 12px;
+}
+
+.cadastroLink {
+  text-decoration: underline;
+  color: blue;
+}
+
+.labelPassword {
+  margin-top: 10px;
+}
+
+.checked {
+  gap: 8px;
+  display: flex;
+  margin-top: 10px;
+
+  align-items: center;
+}
+span {
+  font-size: 10px;
+}
