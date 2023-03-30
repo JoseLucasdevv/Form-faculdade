@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tela de login</title>
+    <title>Tela de Cadastro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,15 +25,14 @@
           type="text"
           id="username"
           name="name"
-          required
         />
+
         <label class="labelPassword" for="password">Digite uma senha:</label>
         <input
           placeholder="digite sua senha"
           type="password"
           id="new-password"
           name="password"
-          required
         />
 
         <label class="labelPassword" for="repeat-password"
@@ -44,7 +43,6 @@
           type="password"
           id="repeat-password"
           name="repeat-password"
-          required
         />
         <label for="email">Digite um email:</label>
         <input
@@ -52,7 +50,6 @@
           id="email"
           name="email"
           placeholder="Digite o email"
-          required
         />
 
         <label for="address">Endereço:</label>
@@ -65,16 +62,21 @@
           rows="3"
           cols="55"
           maxlength="50"
-          required
           placeholder="Digite seu endereço"
+          
         ></textarea>
+        <span class="msgErrorAddress error"></span>
       </div>
       <div class="checked">
-        <input type="checkbox" name="term" id="term" required />
-        <span
+        <input type="checkbox" name="term" id="term" />
+        <span class=
           >eu li e concordo com os Termos de Uso e Política de Privacidade</span
         >
+        
+        
+         
       </div>
+      <p class="error textInputCheckbox"></p></p>
 
       <div class="btn-wrapper">
         <button class="btn">Cadastrar</button>

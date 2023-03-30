@@ -45,6 +45,7 @@ form {
   justify-content: center;
 }
 label {
+  margin-left: 4px;
   font-size: 18px;
 }
 input,
@@ -97,10 +98,6 @@ p {
   color: blue;
 }
 
-.labelPassword {
-  margin-top: 10px;
-}
-
 .checked {
   gap: 8px;
   display: flex;
@@ -110,4 +107,21 @@ p {
 }
 span {
   font-size: 10px;
+}
+
+.success {
+  color: green;
+  text-align: center;
+
+  margin-top: 5px;
+
+  font-size: 12px;
+}
+.error {
+  text-align: center;
+
+  margin-top: 5px;
+
+  font-size: 12px;
+  color: red;
 }
