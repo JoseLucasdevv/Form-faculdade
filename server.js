@@ -11,6 +11,9 @@ app.route("/").get((req, res) => {
 app.route("/cadastro.html").get((req, res) => {
   res.sendFile(path.resolve(__dirname, "views", "cadastro.html"));
 });
+app.route("/card.html").get((req, res) => {
+  res.sendFile(path.resolve(__dirname, "views", "card.html"));
+});
 
 app.listen(port, () => {
   console.log("run in port 3000");
